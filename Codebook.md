@@ -11,5 +11,5 @@ Variables
 ---------
   - ActivityLabel: activity derived from y_train.txt and y_test.txt text files in the UCI HAR dataset. These are unique IDs associated with the subjects in the test. Originally were partitioned into two sets (testing and training). The script merges them into one tidy data set.
   - SubjectId: Fetched the ids from the subject_train.txt and subject_test.txt text files in the UCI HAR dataset
-  - STD and MEAN calculations. Column names take the form label-(mean|std)Col[-X|Y|Z]
+  - STD and MEAN calculations. Column names take the form label-(mean|std)Col[dimension-var]
     - Such as fBodyGyro-stdCol-X, fBodyGyro-stdCol-Y, etc.
