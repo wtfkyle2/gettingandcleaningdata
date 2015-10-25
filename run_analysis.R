@@ -72,8 +72,7 @@ colnames(fVector) <- c("Feature_code","Feature_str")
 colnames(datM) <- fVector$Feature_str
 
 ## Filter data
-filtered <- names(datM)[grep("mean\\(\\)|std\\(\\)", names(datM))]
-datM <- datM[,filtered]
+datM <- datM[,names(datM)[grep("mean\\(\\)|std\\(\\)", names(datM))]]
 
 ## Cleanup strings
 colnames(datM) <- sub("\\(\\)", "Col", names(datM))
